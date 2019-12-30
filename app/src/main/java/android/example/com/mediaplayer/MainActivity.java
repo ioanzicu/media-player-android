@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mediaPlayer = MediaPlayer.create(this, R.raw.iron_maiden_dance_of_death);
+        mediaPlayer = MediaPlayer.create(this, R.raw.color_white);
 
         Button playButton = findViewById(R.id.play_button);
 
@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Notify when the song is finished
         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
